@@ -17,6 +17,7 @@ for x, y, w, h in faces:
 
 resize = cv2.resize(img, (int(img.shape[1]/3), int(img.shape[0]/3)))
 
+# show result on screen
 cv2.imshow("Detected", resize)
 cv2.imwrite("face_detected.jpg", resize)
 cv2.waitKey()
